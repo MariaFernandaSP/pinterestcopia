@@ -7,6 +7,9 @@ body{
     background-color: white;
     font-family: sans-serif;
     font-weight: bold;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header nav img#pinterest_icon{
@@ -21,6 +24,8 @@ header nav img#pinterest_icon:hover{
 }
 
 header nav{
+    margin: 0%;
+    padding: 0%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,8 +33,7 @@ header nav{
     width: 98vw;
     height: 80px;
     font-size: 16px;
-    padding: 0px 16px;
-    position: fixed;
+    position: static;
     z-index:1;
     background-color: white;
 }
@@ -108,8 +112,7 @@ header nav{
 
 /*Estilos de las imagenes*/
 .contenido{
-    position: absolute;
-    margin-top: 80px;
+    margin-top: 0;
     padding-right: 5px;
 }
 
@@ -133,7 +136,7 @@ header nav{
 
 .card-image:hover >
 :first-child{
-    filter: brightness(20);
+    filter:grayscale(53);
 }
 
 .card-image:hover > *{
